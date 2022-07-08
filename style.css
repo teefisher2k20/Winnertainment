@@ -8,6 +8,11 @@ body{
     background-color: dimgray;
 }
 
+.header{
+    height: 100vh;
+    background: red;
+    box-sizing: border-box;
+}
 .container{
     width: 85vmin;
     position: absolute;
@@ -55,4 +60,22 @@ img{
     }
     
 
+}
+
+.shop{
+    height: 100vh;
+    background: black;
+    box-sizing: border-box;
+}
+
+.artist{
+    height: 100vh;
+    background: darkblue;
+    box-sizing: border-box;
+}
+
+.footer{
+    height: 60vh;
+    background: grey;
+    box-sizing: border-box;
 }
