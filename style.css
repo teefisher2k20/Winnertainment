@@ -7,41 +7,50 @@
 body{
     background-color: dimgray;
 }
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+
+.main{
+    height: 80vh;
 }
-.header{
-    height: 100vh;
-    box-sizing: border-box;
+.headerImage{
+    height: 80vh;
+    
 }
 
 .topnav {
+    
     background-color: #333;
-    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    
   }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
+ .topnav ul{
+  list-style: none;
+  background: transparent;
+  padding: 0;
+    margin: 0;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+ }
+ .topnav li{
+  display: inline-block;
+ 
+ }
+.topnav a{
+  text-decoration: none;
+  color: blue;
+  width: 100px;
+  display: block;
+  padding: 25px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.topnav a:hover{
+  background: tan;
+}
+
+
+
 .container{
     width: 85vmin;
     position: absolute;
@@ -54,9 +63,9 @@ p{
     overflow: hidden;
 }
 .img-container{
-    width: 100%;
+    height: 80vh;
     display: flex;
-    animation: slide 16s infinite;
+    
 }
 img{
     width: 100%;
@@ -64,34 +73,6 @@ img{
 
 }
 
-@keyframes slide{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-100%);
-    }
-    75%{
-        transform: translateX(-100%);
-    }
-    80%{
-        transform: translateX(-200%);
-    }
-    100%{
-        transform: translateX(-200%);
-    }
-    
-
-}
 
 .shop{
     height: 100vh;
@@ -101,14 +82,14 @@ img{
 
 .artist{
     height: 60vh;
-    background: black;
+    background: beige;
     box-sizing: border-box;
     padding-top: 50px;
 }
 
 .footer{
-    height: 30vh;
-    background: tan;
+    height: 15vh;
+    background: gray;
     box-sizing: border-box;
 }
 
