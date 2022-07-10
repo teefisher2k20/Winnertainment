@@ -8,30 +8,25 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font: 17px;
-    color: maroon;
+    color: dimgray;
     line-height: 1.6;
 }
-#showcase{
-  background-image: url("images\saint louis blue sky.JPG");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-.main{
-    height: 80vh;
-}
-.headerImage{
-    height: 80vh;
-    
-}
+
 
 .topnav {
     
-    background-color: #333;
-    padding: 0;
-    margin: 0;
+  position: relative;
+  text-align: center;
+  color: white;
     
   }
+  /* Centered text */
+.centered {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
  .topnav ul{
   list-style: none;
   background: transparent;
@@ -57,92 +52,19 @@ body{
   text-align: center;
 }
 .topnav a:hover{
-  background: tan;
+  color: lawngreen;
+  transition: ease-in-out;
 }
-
-
-
-.container{
-    width: 85vmin;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border: 10px solid #ffffff;
-    border-radius: 8px;
-    box-shadow: 10px 25px 28px rgba(0,0,0,0.3);
-    overflow: hidden;
-}
-.img-container{
-    height: 80vh;
-    display: flex;
-    
-}
-img{
-    width: 100%;
-    height: fit-content;
-
-}
-
-
-.shop{
-    height: 100vh;
-    background: maroon;
-    box-sizing: border-box;
-}
-
-.artist{
-    height: 60vh;
-    background: beige;
-    box-sizing: border-box;
-    padding-top: 50px;
-}
-
-.footer{
-    height: 15vh;
-    background: gray;
-    box-sizing: border-box;
-}
-
-.image-grid {
-    --gap: 16px;
-    --num-cols: 5;
-    --row-height: 1000px;
+.greeting{
+  position: absolute;
+  top: 450%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: crimson;
   
-    box-sizing: border-box;
-    padding: var(--gap);
-  
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-  }
-  
-  .image-grid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
- .image-grid-row-2 {
-    grid-row: span 2;
-  }
-  
-  /* Anything under 1024px */
-  @media screen and (max-width: 1024px) {
-    .image-grid {
-      --num-cols: 2;
-      --row-height: 200px;
-    }
-}
-
-.image {
-    position: relative;
-    width: 400px;
-}
-
-.image__img {
-    display: block;
-    width: 100%;
 }
 
