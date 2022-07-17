@@ -54,6 +54,10 @@ body {
   padding: 20px 80px;
   background: #e3e6f3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar{
@@ -102,8 +106,61 @@ body {
   background-position: top 25% right 0;
   padding: 0 80px;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
+#hero h4 {
+  padding-bottom: 15px;
+}
 
+#hero h1 {
+  color: red;
+}
+
+#hero button{
+  background-image: url("shop button image.jpg");
+  background-color: transparent;
+  border-radius: 12px;
+  color: green;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+  border: 1px whitesmoke;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+#feature .fe-box h6 {
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: red;
+  background-color: whitesmoke;
+}
