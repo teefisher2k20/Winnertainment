@@ -2,35 +2,58 @@
   margin: o;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Poppins';
   
 }
+#button {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 20px;
+  line-height: 50px;
+}
 
-h1 {
-  font-size: 50px;
-  line-height: 64px;
-  color: gold;
+#hero h1 {
+  
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 30px;
+  line-height: 50px;
+  color: rgb(14, 14, 14);
 }
 
 h2{
-  font-size: 46px;
-  line-height: 54px;
-  color: lightsalmon;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 20px;
+  line-height: 50px;
+  color: black;
 }
 
 h4 {
+  position: absolute;
+  top: 8px;
+  right: 16px;
   font-size: 20px;
-  color: blue;
+  color: crimson;
 }
 
-h6{
+h3 {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
   font-weight: 700;
   font-size: 12px;
 }
 
 p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
   font-size: 16px;
-  color: whitesmoke;
+  color: black;
   margin: 15px 0 20px 0;
 }
 
@@ -123,7 +146,7 @@ body {
 
 #hero button{
   background-image: url("shop button image.jpg");
-  background-color: transparent;
+  background-color: black;
   border-radius: 12px;
   color: green;
   border: 0;
@@ -142,7 +165,7 @@ body {
 }
 
 #feature .fe-box {
-  width: 200px;
+  width: 300px;
   text-align: center;
   padding: 25px 15px;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
@@ -182,4 +205,7 @@ body {
 }
 #feature .fe-box:nth-child(6) h6{
   background-color: #fff2e5;
+}
+#radio h1 {
+  background-color: #088178;
 }
