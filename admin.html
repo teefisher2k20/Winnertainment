@@ -15,9 +15,36 @@
     <link rel="stylesheet" href="tv.html">
 </head>
 <body>
-    <form action="/action_page.php">
-        <input type="file" id="myFile" name="filename">
-        <input type="submit">
-      </form>
+    <section id="header">
+        <!-- <a href="#"><img src="images\Arch dark blue sky.JPG" class="logo" alt=""></a> -->
+
+        <div>
+          <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="radio" href="radio.html">Radio</a></li>
+            <li><a class="shop" href="shop.html">Shop</a></li>
+            <li><a class="contact" href="contact.html">Contact us</a></li>
+            <!-- <li><a href="about.html">Bio</a></li> -->
+            <li><a href="artist.html">Artist</a></li>
+            <!-- <li><a href="blog.html">Blog</a></li> -->
+            <!-- <li><a href="cart.html">Cart<i class="fa-solid fa-cart-shopping-fast"></i></a></li> -->
+            <li><a class="tv" href="tv.html">TV</a></li>
+            <li><a class="admin" href="admin.html">Log in</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="bg-img">
+        <form action="/action_page.php" class="container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
 </body>
 </html>
