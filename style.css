@@ -122,6 +122,45 @@ body {
   left: 20px;
 }
 
+/* contact form */
+#contactnavbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#contactnavbar li {
+  
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  
+}
+#contactnavbar li a {
+  
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: 0.3 ease;
+    background-color: transparent;
+  
+}
+#contactnavbar li a:hover,
+#contactnavbar li a.active{
+  color: #088178;
+}
+#contactnavbar li a.active::after,
+#contactnavbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
 /* Home Page*/
 #hero{
   background-image: url("newlogo.jpg");
@@ -268,4 +307,22 @@ input[type=submit]:hover {
   opacity: 0.8;
 }
 
- 
+/* Winnertainment TV */
+.video-container{
+  width: 100vw;
+  height: 100vh;
+}
+.video-container h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+    
+iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
